@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+img#logo {
+    height: 100px;
+    width: auto;
+}
+
+.menu-fixo {
+    background-color: #000;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1970px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.menu-links {
+    display: flex;
+    list-style: none;
+}
+
+.menu-links li {
+    margin-left: 25px;
+}
+
+.menu-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-links a:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+main {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.inicio {
+    background: linear-gradient(135deg, #000 40%, #ff0000);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.inicio h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.inicio p {
+    font-size: 1.3em;
+}
+
+.banner-bf {
+    margin-top: 25px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    animation: pisca 1s infinite alternate;
+}
+
+@keyframes pisca {
+    from { background-color: #ffcc00; }
+    to { background-color: #ff0000; color: white; }
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #ff0000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.lista-ofertas {
+    list-style: none;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.lista-ofertas li {
+    margin: 10px 0;
+}
+
+.alerta {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #fff;
+}
