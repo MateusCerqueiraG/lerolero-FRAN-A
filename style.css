@@ -7,9 +7,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f8f8f8;
+    background: linear-gradient(to right, #0055A4 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #EF4135 66.66%);
     color: #222;
 }
+
 
 img#logo {
     height: 100px;
@@ -56,10 +57,76 @@ img#logo {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 20px;
 }
 
+.features {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0055A4, #000000 40%);
+  }
+  
+  .features h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  
+  .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .feature-box {
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+  }
+  
+  .feature-box::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 8px;
+    width: 100%;
+    background-color: #ff0000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-box:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-box i {
+    font-size: 40px;
+    color: #0a3761;
+    margin-bottom: 15px;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.1em;
+    color: #222;
+    font-weight: 600;
+  }
+  
 .inicio {
     background: linear-gradient(135deg, #000 40%, #ff0000);
     color: white;
@@ -89,6 +156,70 @@ main {
     animation: pisca 1s infinite alternate;
 }
 
+#equipe {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    color: #222;
+    margin-top: 50px;
+  }
+  
+  #equipe h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+  
+  #equipe p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  #rapidez {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    color: #222;
+  }
+  
+  #rapidez h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+  
+  #rapidez p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }  
+  
+  #confianca {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    color: #222;
+  }
+  
+  #confianca h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+  
+  #confianca p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
 @keyframes pisca {
     from { background-color: #ffcc00; }
     to { background-color: #ff0000; color: white; }
