@@ -219,6 +219,68 @@ main {
     margin: 0 auto;
     line-height: 1.6;
   }
+
+  #velocidade {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #222;
+  }
+  
+  #velocidade h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+  
+  #velocidade p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  #contato {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    color: #222;
+  }
+  
+  #contato h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff0000;
+    margin-bottom: 25px;
+  }
+  
+  #contato p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  #contato i {
+    color: #ff0000;
+    margin-right: 10px;
+  }
+  
+  #contato a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  #contato a:hover {
+    color: #cc0000;
+    text-decoration: underline;
+  }
+
+  img#banner {
+    margin-top: 70px;
+  }
   
 @keyframes pisca {
     from { background-color: #ffcc00; }
@@ -261,7 +323,7 @@ footer {
     color: white;
     text-align: center;
     padding: 25px 10px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 footer a {
